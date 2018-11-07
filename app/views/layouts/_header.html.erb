@@ -10,8 +10,9 @@
             </a>
             <ul class="dropdown-menu">
               <li class="divider"></li>
-              <li>
+              <li> <% if moussaillon_signed_in? %>
                 <%= link_to "Log out", destroy_moussaillon_session_path, method: :delete %>
+              <% end %>
               </li>
             </ul>
           </li>
